@@ -24,7 +24,10 @@ public class BalancedBracketsTest {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[LaunchCode]"));
     }
 
-
+    @Test
+    public void oneBracketFail() {
+        assertFalse(BalancedBrackets.hasBalancedBrackets("[LaunchCode"));
+    }
 
 
 }
